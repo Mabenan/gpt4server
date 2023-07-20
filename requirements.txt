@@ -1,0 +1,8 @@
+Flask
+datetime 
+uuid
+Flask-SQLAlchemy
+PyJWT
+gpt4all
+waitress
+pathlib
