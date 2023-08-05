@@ -60,7 +60,7 @@ def add_chat(current_user):
         model = data['model'],
         properties = json.dumps( dict(
                 temp = data["properties"]["temp"] if "temp" in data["properties"] else 0.7,
-                top_k = data["properties"]["top_k"] if "top_k" in data["properties"] else 1,
+                top_k = data["properties"]["top_k"] if "top_k" in data["properties"] else 40,
                 top_p = data["properties"]["top_p"] if "top_p" in data["properties"] else 0.1,
                 repeat_penalty = data["properties"]["repeat_penalty"] if "repeat_penalty" in data["properties"] else 1.18,
                 repeat_last_n = data["properties"]["repeat_last_n"] if "repeat_last_n" in data["properties"] else 64,

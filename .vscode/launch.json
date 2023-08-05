@@ -11,7 +11,8 @@
             "program": "${file}",
             "console": "integratedTerminal",
             "env": {"APP_DATA_LOC" : "/home/daniel/.cache/gpt4all",
-                    "WEB_SERVER_THREADS": "1"},
+                    "WEB_SERVER_THREADS": "1",
+                    "GPT4ALL_THREADS" : "6"},
             "justMyCode": false
         },
         {
@@ -23,6 +24,10 @@
                 "-v",
                 "gpt4server.py"
             ],
+            "env": {"APP_DATA_LOC" : "/home/daniel/.cache/gpt4all",
+                    "WEB_SERVER_THREADS": "1",
+                    "GPT4ALL_THREADS" : "6",
+                    "LLM": "Hugging"},
             "justMyCode": false
         }
     ]

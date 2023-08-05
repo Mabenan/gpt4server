@@ -1,8 +1,10 @@
-Flask
+Flask[async]
 datetime 
 uuid
 Flask-SQLAlchemy
 PyJWT
+langchain
 gpt4all
 waitress
 pathlib
+huggingface_hub

@@ -15,7 +15,7 @@ import os
 import uuid
 import re
 app_data_loc = os.environ.get('APP_DATA_LOC')
-web_server_threads = os.environ.get('WEB_SERVER_THREADS') if 'WEB_SERVER_THREADS' in os.environ else 2
+web_server_threads = int(os.environ.get('WEB_SERVER_THREADS')) if 'WEB_SERVER_THREADS' in os.environ else 2
 if app_data_loc is None:
     app_data_loc = Path.home().joinpath(".cache/gpt4all").as_posix()
 
